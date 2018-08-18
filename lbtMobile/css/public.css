@@ -369,7 +369,42 @@ html {
 
 /******************************** 【 导航部分 】 ************************************************/
 .footer_cont{
+    width: 7.5rem;
+    height: 1.16rem;
+    background: #1b1b1b;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+.footer_cont ul{
     width: 100%;
+    height: 100%;
+    display: flex;
+}
+.footer_cont ul li{
+    width: 25%;
+    padding: 0.13rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.26666667rem;
+    vertical-align: bottom;
+}
+.footer_cont ul li .footer-icon{
+    font-size: 0.54rem;
+}
+.footer_cont ul li .footer-icon,.footer_cont ul li span{
+    color: #FFF;
 }
 
 

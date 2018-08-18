@@ -1,50 +1,50 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-(function() {
+// 导航
+$(function(){
+    // nav收缩展开
+    $('.nav-list>a').on('click',function(){
+        if (!$('.nav').hasClass('nav-mini')) {
+            if ($(this).next().css('display') == "none") {
+                //展开未展开
+                $('.nav-list').children('ul').slideUp(300);
+                $(this).next('ul').slideDown(300);
+                $(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
+            }else{
+                //收缩已展开
+                $(this).next('ul').slideUp(300);
+                $('.nav-list.nav-show').removeClass('nav-show');
+            }
+        }
+    });
+    //点击按钮显示隐藏导航
+    $('#navBtnIcon').on('click',function(){
+        if (!$('.nav_cont').hasClass('nav-show')) {
+            $('.nav_cont').addClass('nav-show');
+            $('.nav_cont').removeClass('nav-hide');
+            $('#hideNavCont').addClass('nav-show');
+            $('#hideNavCont').removeClass('nav-hide');
+            $('.nav_btn_icon').addClass('cur');
 
-	var bodyEl = document.body,
-		content = document.querySelector( '.content-wrap' ),
-		openbtn = document.getElementById( 'open-button' ),
-		closebtn = document.getElementById( 'close-button' ),
-		isOpen = false;
+        }else{
+            $('.nav_cont').addClass('nav-hide');
+            $('.nav_cont').removeClass('nav-show');
+            $('#hideNavCont').addClass('nav-hide');
+            $('#hideNavCont').removeClass('nav-show');
+            $('.nav_btn_icon').removeClass('cur');
 
-	function init() {
-		initEvents();
-	}
-
-	function initEvents() {
-		openbtn.addEventListener( 'click', toggleMenu );
-		if( closebtn ) {
-			closebtn.addEventListener( 'click', toggleMenu );
-		}
-
-		// close the menu element if the target it´s not the menu element or one of its descendants..
-		content.addEventListener( 'click', function(ev) {
-			var target = ev.target;
-			if( isOpen && target !== openbtn ) {
-				toggleMenu();
-			}
-		} );
-	}
-
-	function toggleMenu() {
-		if( isOpen ) {
-			classie.remove( bodyEl, 'show-menu' );
-		}
-		else {
-			classie.add( bodyEl, 'show-menu' );
-		}
-		isOpen = !isOpen;
-	}
-
-	init();
-
-})();
+        }
+    });
+     //点击导航外空白区域隐藏导航
+    $('#hideNavCont').on('click',function(){
+    	$('.nav_cont').addClass('nav-hide');
+        $('.nav_cont').removeClass('nav-show');
+        $('#hideNavCont').addClass('nav-hide');
+        $('#hideNavCont').removeClass('nav-show');
+    });
+});
+var panDuan=function(){
+	$("html").css("font-size", document.documentElement.clientWidth / 375 * 312.5 + "%");
+}
+$(window).resize(function() {
+    panDuan()
+});
+panDuan();
