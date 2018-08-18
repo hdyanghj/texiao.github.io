@@ -1,0 +1,12 @@
+.text-ellipsis {
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

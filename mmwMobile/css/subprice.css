@@ -1,0 +1,55 @@
+.text-ellipsis {
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page-price-product {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.page-price-product:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-price-product .a-item {
+  background: #ffffff;
+  border-bottom: 2px solid #eeeeee;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  font-weight: 400;
+  color: #999999;
+  height: 28px;
+  line-height: 28px;
+  padding: 6px 11.71875px;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.page-price-product .a-item span.product-name {
+  color: #333333;
+}
+.page-price-product .a-item span.product-price {
+  color: #eb9a26;
+}
+.page-price-product .a-item span {
+  margin-right: 5px;
+}
+.page-wechat {
+  padding: 15px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  background: #ffffff;
+}
+.page-wechat img {
+  max-width: 100%;
+}

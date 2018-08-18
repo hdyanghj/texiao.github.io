@@ -1,0 +1,42 @@
+@import "mui";
+
+body{
+  background: #eeeeee;
+}
+.page-sub-menu {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.page-price{
+  margin: 0 0 10px 0;
+  background: #ffffff;
+  &:after{
+    .remove-float(0);
+  }
+  table{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    tr{
+      th{
+        .set-font(@font-YaHei,14px,#ffffff,400);
+        background: #ac9d80;
+        text-align: center;
+        border:1px solid #bdb199;
+        padding: 10px 0;
+      }
+      td{
+        .set-font(@font-YaHei,11px,#7e7e7e,400);
+        text-align: center;
+        border:1px solid #eeeeee;
+        padding: 6px 0;
+        img{
+          max-height: 25px;
+        }
+      }
+    }
+  }
+}

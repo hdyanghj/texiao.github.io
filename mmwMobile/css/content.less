@@ -1,0 +1,44 @@
+@import "mui";
+
+body{
+  background: #eeeeee;
+}
+.page-sub-menu{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.page-detail{
+  margin: 0 0 10px 0;
+  &:after{
+    .remove-float(0);
+  }
+  .a-header{
+    .set-font(@font-YaHei,15px,#666666,400);
+    background: #ffffff;
+    height:18px;
+    line-height: 18px;
+    padding: 10px @page-p;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 4px;
+    .b-left-tag{
+      height: 100%;
+      width: 4px;
+      background: #f1bc2b;
+      border-radius: 2px;
+      float: left;
+      margin-right: 15px;
+    }
+  }
+  .a-detail{
+    padding: @page-p;
+    background: #ffffff;
+    &:after{
+      .remove-float(0);
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+}
+

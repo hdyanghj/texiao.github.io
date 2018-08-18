@@ -1,0 +1,141 @@
+@font-default-family:Arial,"微软雅黑";
+@font-default-size:16px;
+@font-default-color:#000;
+@font-default-weight:normal;
+@width:1000px;
+@top-color:#13a6b0;
+
+//基础宽度高度以及字体
+@a-width:1000px;
+@b-width:680px;
+@c-width:290px;
+@font-YaHei:"Microsoft YaHei";
+@page-p:11.71875px;
+
+//float:
+.f(@float){
+  float:@float;
+}
+
+//text-align
+.t-a(@text-align){
+  text-align: @text-align;
+}
+
+//清除浮动block
+.remove-float(@t)when(@t=0){
+  content: '';
+  display: block;
+  clear: both;
+}
+
+//清除浮动inline-block
+.remove-float(@t)when(@t=1){
+  content: '';
+  display: inline-block;
+  clear: both;
+}
+
+//解除chrome字体限制
+.font-size(@size){
+  -webkit-transform: scale(@size/12);
+}
+
+//设置文字
+.set-font(@family:@font-default-family,@size:@font-default-size,@color:@font-default-color,@weight:@font-default-weight){
+  font-family:@family;
+  font-size: @size;
+  font-weight: @weight;
+  color: @color;
+}
+
+//动画并规定时间
+.transition(@time_:0.5s,@attr_:all){
+  -webkit-transition: @attr_  @time_;
+  -moz-transition: @attr_  @time_;
+  -ms-transition: @attr_  @time_;
+  -o-transition: @attr_  @time_;
+  transition: @attr_  @time_;
+}
+
+//兼容IE8透明度
+.opacity(@opacity){
+  filter:alpha(opacity=@opacity);
+}
+
+.opacitys(@opacity){
+  opacity: @opacity;
+  filter:alpha(opacity=@opacity);
+}
+
+//滤镜
+.grayscale(@num){
+  -ms-filter: grayscale(@num);
+  filter: grayscale(@num);
+  -webkit-filter: grayscale(@num);
+}
+
+//图标样式，参数：icon.png里的background-position
+.icon(@background-position){
+  background-image: url(../images/icon/icon.png);
+  background-position: @background-position;
+  background-repeat: no-repeat;
+}
+
+//虚线top
+.dashed(@t) when (@t=0){
+  border-top:dashed 1px #cccccc;
+}
+
+//虚线
+.dashed(@t) when (@t=1){
+  border-right:dashed 1px #cccccc;
+}
+
+//虚线
+.dashed(@t) when (@t=2){
+  border-bottom:dashed 1px #cccccc;
+}
+
+//虚线
+.dashed(@t) when (@t=3){
+  border-left:dashed 1px #cccccc;
+}
+
+//自动换行
+.break(@t) when (@t=0){
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+//不换行
+.break(@t) when (@t=1){
+  white-space:nowrap;
+}
+
+//多行省略
+//@num超出多少行开始省略
+.texts-ellipsis(@num){
+  overflow : hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @num;
+  -webkit-box-orient: vertical;
+}
+//单行省略
+.text-ellipsis{
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+//单行超出换行
+.ellipsis{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}

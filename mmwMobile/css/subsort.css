@@ -1,0 +1,48 @@
+.text-ellipsis {
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body {
+  background: #eeeeee;
+}
+.page-sub-menu {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.page-information {
+  background: transparent;
+}
+.page-information .a-detail {
+  padding: 0;
+}
+.page-information .a-detail .information-item {
+  padding: 15.625px 11.71875px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+  background: #ffffff;
+}
+.page-information .a-footer {
+  border-top: 0;
+}
+.page-information .a-footer .b-btn {
+  height: 28px;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+  display: inline-block;
+  line-height: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 0 48px;
+}

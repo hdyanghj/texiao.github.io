@@ -1,0 +1,276 @@
+.text-ellipsis {
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body {
+  background: #eee;
+}
+.page-banner {
+  width: 100%;
+  max-height: 640px;
+}
+.page-banner img {
+  max-width: 100%;
+  float: left;
+}
+.page-banner:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-top-case .a-header .b-left-tag {
+  background: #f1bc2b;
+}
+.page-top-case .a-detail {
+  padding: 0 11.71875px;
+}
+.page-top-case .a-detail:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-top-case .a-detail .b-item {
+  width: 48.333333333333334%;
+  margin-right: 3.3333333333333326%;
+  margin-bottom: 20px;
+  float: left;
+}
+.page-top-case .a-detail .b-item:nth-child(2n) {
+  margin-right: 0;
+}
+.page-top-case .a-detail .b-item .c-detail {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+}
+.page-top-case .a-detail .b-item .c-detail img {
+  width: 100%;
+}
+.page-top-case .a-detail .b-item .c-detail .d-title {
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 16px;
+  width: 93.10344827586207%;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 16px;
+}
+.page-top-case .a-detail .b-item .c-detail .d-summary {
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 12px;
+  width: 93.10344827586207%;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 7px;
+  padding-bottom: 14px;
+}
+.page-top-case .a-footer {
+  height: 14.6484375px;
+  line-height: 14.6484375px;
+  padding: 11.81640625px 0;
+  border-top: 1px solid #f3f3f3;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  font-size: 14.6484375px;
+  font-weight: 400;
+  color: #999999;
+}
+.page-top-case .a-footer .b-text {
+  display: inline-block;
+}
+.page-top-case .a-footer img {
+  max-height: 100%;
+}
+.page-case {
+  margin-bottom: 10px;
+  background: #ffffff;
+}
+.page-case:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-case .a-header {
+  height: 20px;
+  padding: 16px  11.71875px;
+  line-height: 20px;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+.page-case .a-header .b-left-tag {
+  height: 100%;
+  width: 4px;
+  background: #10a7b2;
+  border-radius: 2px;
+  float: left;
+  margin-right: 15px;
+}
+.page-case .a-detail:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-case .a-detail .b-item {
+  border-top: 2px solid #f3f3f3;
+  padding: 7.8125px 11.71875px;
+}
+.page-case .a-detail .b-item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-case .a-detail .b-item .c-head {
+  width: 75.00010666666667px;
+  height: 51.56257333333333px;
+  margin-right: 11.132828333333334px;
+  float: left;
+}
+.page-case .a-detail .b-item .c-head img {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.page-case .a-detail .b-item .c-detail {
+  height: 51.56257333333333px;
+  overflow: hidden;
+}
+.page-case .a-detail .b-item .c-detail .d-header {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+.page-case .a-detail .b-item .c-detail .d-tags {
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 3px;
+}
+.page-case .a-detail .b-item .c-detail .d-footer {
+  font-family: "Microsoft YaHei";
+  font-size: 10px;
+  font-weight: 400;
+  color: #999999;
+}
+.page-case .a-detail .b-item .c-detail .d-footer img {
+  max-height: 12px;
+}
+.page-case .a-footer {
+  height: 14.6484375px;
+  line-height: 14.6484375px;
+  padding: 11.81640625px 0;
+  border-top: 2px solid #f3f3f3;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  font-size: 14.6484375px;
+  font-weight: 400;
+  color: #999999;
+}
+.page-case .a-footer .b-text {
+  display: inline-block;
+}
+.page-case .a-footer img {
+  max-height: 100%;
+}
+.page-hospital-appraise .a-header .b-left-tag {
+  background: #ee8477;
+}
+.page-hospital-appraise .a-detail {
+  background: #eeeeee;
+  padding: 0 11.71875px;
+  overflow: hidden;
+}
+.page-hospital-appraise .a-detail .hospital-item {
+  margin-top: 20px;
+  padding: 19px 20px 13px 17px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.page-hospital-appraise .a-detail .hospital-item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-hospital-appraise .a-detail .hospital-item .hospital-item-title {
+  font-family: "Microsoft YaHei";
+  font-size: 14.6484375px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 8px;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.page-hospital-appraise .a-detail .hospital-item .hospital-item-head {
+  padding-top: 5px;
+}
+.page-hospital-appraise .a-detail .hospital-item .hospital-item-head img {
+  width: 26px;
+}
+.page-hospital-appraise .a-detail .hospital-item .hospital-item-detail {
+  width: 83.33333333333334%;
+  float: right;
+  position: relative;
+  background: #f3f3f9;
+  border-radius: 5px;
+  padding: 8px 4px 8px 10px;
+  font-family: "Microsoft YaHei";
+  font-size: 13px;
+  font-weight: 400;
+  color: #8b8b8b;
+  border: 1px solid rgba(243, 243, 249, 0.4);
+}
+.page-hospital-appraise .a-detail .hospital-item .hospital-item-detail:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-hospital-appraise .a-detail .hospital-item .hospital-item-detail .hospital-item-detail-arrow {
+  position: absolute;
+  z-index: 10;
+  left: -9px;
+  top: 10px;
+}
+.page-hospital-appraise .a-detail .hospital-item .hospital-item-footer {
+  width: 83.33333333333334%;
+  padding-right: 14px;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  font-weight: 400;
+  color: #b5b5b5;
+  float: right;
+  margin-top: 8px;
+}
+.page-hospital-appraise .a-footer {
+  background: #eeeeee;
+  height: 30px;
+}
+.page-sub-menu .a-item {
+  margin-bottom: 2px;
+}
+@media (max-width: 350px) {
+  .page-hospital-appraise .a-detail .hospital-item .hospital-item-detail {
+    width: 78.333333%;
+  }
+  .page-hospital-appraise .a-detail .hospital-item .hospital-item-footer {
+    width: 78.333333%;
+  }
+}

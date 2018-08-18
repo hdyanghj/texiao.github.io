@@ -1,0 +1,140 @@
+@import "mui";
+body{
+  background: #eeeeee;
+}
+
+//攻略菜单
+.strategy-menu{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 0 @page-p;
+  background: #ffffff;
+  .a-detail{
+    &:after{
+      .remove-float(0);
+    }
+    .b-item{
+      width: 25%;
+      padding: 15px 0 14px 0;
+      float: left;
+      text-align: center;
+      font-family: SimHei;
+      .set-font(SimHei,16px,#666666,400);
+      img{
+        max-height: 34px;
+        max-width: 100%;
+      }
+      .c-title{
+        margin-top: 9px;
+      }
+    }
+  }
+}
+
+//攻略列表
+.strategy-items{
+  border-top: 1px solid #ececf5;
+  border-bottom: 1px solid #ececf5;
+  .strategy-item{
+    padding: @page-p;
+    background: #ffffff;
+    margin-bottom: 8px;
+    .b-header{
+      margin-bottom: 11.71875px;
+      height: 30px;
+      font-family: "Microsoft YaHei";
+      font-size: 12px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 30px;
+      .c-head-img{
+        width: 30px;
+        height: 30px;
+        float: left;
+        display: block;
+        overflow: hidden;
+        margin-right: 10px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .c-attention{
+        height: 28px;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+        color: #666666;
+        float: right;
+        padding: 0 10px;
+        img{
+          float: left;
+          margin-top: 8px;
+          height: 13px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .b-detail{
+      .set-font(@font-YaHei,14px,#646464,400);
+      .c-items{
+        margin-top: 10px;
+        &:after{
+          .remove-float(0);
+        }
+        .d-item{
+          margin-left: 1.3333333333333334%;
+          width: 49.333333333333335%;
+          float: left;
+          &:first-child{
+            margin-left: 0;
+          }
+          .e-detail{
+            border: 1px solid #e7e7e7;
+            border-radius: 5px;
+            overflow: hidden;
+            img{
+              max-width: 100%;
+              float: left;
+            }
+          }
+        }
+      }
+    }
+    .b-footer{
+      margin-top: 10px;
+      height: 15px;
+      line-height: 15px;
+      .set-font(@font-YaHei,11px,#999999,400);
+      .c-time{
+        float: left;
+        img{
+          float: left;
+          height: 15px;
+          margin-right: 5px;
+        }
+      }
+      .c-right{
+        float: right;
+        margin-left: 10px;
+        img{
+          float: left;
+          max-height: 15px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.strategy-more{
+  margin:4px auto 15px auto;
+  text-align: center;
+  .a-btn{
+    .set-font(@font-YaHei,14px,#999999,400);
+    padding: 5px 15px;
+    border-radius: 7px;
+    border:1px solid #c9c9c9;
+    text-align: center;
+    display: inline-block;
+  }
+}

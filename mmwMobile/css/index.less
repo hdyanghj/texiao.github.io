@@ -1,0 +1,242 @@
+@import "mui";
+body{
+  background: #eee;
+}
+.page-banner{
+  width: 100%;
+  max-height: 640px;
+  img{
+    max-width: 100%;
+    float: left;
+  }
+  &:after{
+    .remove-float(0);
+  }
+}
+
+
+
+
+
+//热门案例
+.page-top-case{
+  .a-header{
+    .b-left-tag{
+      background: #f1bc2b;
+    }
+  }
+  .a-detail{
+    padding: 0 11.71875px;
+    &:after{
+      .remove-float(0);
+    }
+    .b-item{
+      width: 48.333333333333334%;
+      margin-right: 3.3333333333333326%;
+      margin-bottom: 20px;
+      float: left;
+      &:nth-child(2n){
+        margin-right: 0;
+      }
+      .c-detail{
+        border: 1px solid #f0f0f0;
+        border-radius: 5px;
+        text-align: center;
+        img{
+          width: 100%;
+        }
+        .d-title{
+          .set-font(@font-YaHei,16px,#333333,400);
+          line-height: 16px;
+          width: 93.10344827586207%;
+          margin: 0 auto;
+          text-align: left;
+          padding-top: 16px;
+        }
+        .d-summary{
+          .set-font(@font-YaHei,12px,#999999,400);
+          line-height: 12px;
+          width: 93.10344827586207%;
+          margin: 0 auto;
+          text-align: left;
+          padding-top: 7px;
+          padding-bottom: 14px;
+        }
+      }
+    }
+  }
+  .a-footer{
+//    height: 19.53125px;
+//    padding: 9.375px 0;
+    height:14.6484375px;
+    line-height:14.6484375px;
+    padding: 11.81640625px 0;
+    border-top: 1px solid #f3f3f3;
+    text-align: center;
+    .set-font(@font-YaHei,14.6484375px,#999,400);
+    .b-text{
+      display: inline-block;
+    }
+    img{
+      max-height: 100%;
+    }
+  }
+}
+
+//案例经历分享
+.page-case{
+  margin-bottom: 10px;
+  background: #ffffff;
+  &:after{
+    .remove-float(0);
+  }
+  .a-header{
+    height: 20px;
+    padding: 16px  11.71875px;
+    line-height: 20px;
+    .set-font(@font-YaHei,16px,#666,400);
+    .b-left-tag{
+      height: 100%;
+      width: 4px;
+      background: #10a7b2;
+      border-radius: 2px;
+      float: left;
+      margin-right: 15px;
+    }
+  }
+  .a-detail{
+    &:after{
+      .remove-float(0);
+    }
+    .b-item{
+      border-top: 2px solid #f3f3f3;
+      padding: 7.8125px @page-p;
+      &:after{
+        .remove-float(0);
+      }
+      .c-head{
+        width: 75.00010666666667px;
+        height: 51.56257333333333px;
+        margin-right: 11.132828333333334px;
+        float: left;
+        img{
+          float: left;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .c-detail{
+        height: 51.56257333333333px;
+        overflow: hidden;
+        .d-header{
+          .set-font(@font-YaHei,14px,#666,400);
+        }
+        .d-tags{
+          .set-font(@font-YaHei,12px,#999999,400);
+          margin-top: 3px;
+        }
+        .d-footer{
+          .set-font(@font-YaHei,10px,#999999,400);
+          img{
+            max-height: 12px;
+          }
+        }
+      }
+    }
+  }
+  .a-footer{
+    height:14.6484375px;
+    line-height:14.6484375px;
+    padding: 11.81640625px 0;
+    border-top: 2px solid #f3f3f3;
+    text-align: center;
+    .set-font(@font-YaHei,14.6484375px,#999,400);
+    .b-text{
+      display: inline-block;
+    }
+    img{
+      max-height: 100%;
+    }
+  }
+}
+
+//整形医院评价
+.page-hospital-appraise{
+  .a-header{
+    .b-left-tag{
+      background: #ee8477;
+    }
+  }
+  .a-detail{
+    background: #eeeeee;
+    padding: 0 @page-p;
+    overflow: hidden;
+    .hospital-item{
+      margin-top: 20px;
+      padding: 19px 20px 13px 17px;
+      background: #ffffff;
+      border-radius: 5px;
+      &:after{
+        .remove-float(0);
+      }
+      .hospital-item-title{
+        .set-font(@font-YaHei,14.6484375px,#666666,400);
+        margin-bottom: 8px;
+        .text-ellipsis;
+      }
+      .hospital-item-head{
+        padding-top: 5px;
+        img{
+          width: 26px;
+        }
+      }
+      .hospital-item-detail{
+        width:83.33333333333334%;
+        float: right;
+        position: relative;
+        background: #f3f3f9;
+        border-radius: 5px;
+        padding: 8px 4px 8px 10px;
+        .set-font(@font-YaHei,13px,#8b8b8b,400);
+        border: 1px solid rgba(243,243,249,0.4);
+        &:after{
+          .remove-float(0);
+        }
+        .hospital-item-detail-arrow{
+          position: absolute;
+          z-index: 10;
+          left: -9px;
+          top: 10px;
+        }
+      }
+      .hospital-item-footer{
+        width:83.33333333333334%;
+        padding-right: 14px;
+        .set-font(@font-YaHei,12px,#b5b5b5,400);
+        float: right;
+        margin-top: 8px;
+      }
+    }
+  }
+  .a-footer{
+    background: #eeeeee;
+    height: 30px;
+  }
+}
+
+.page-sub-menu{
+  .a-item{
+    margin-bottom: 2px;
+  }
+}
+
+@media(max-width: 350px) {
+
+
+  .page-hospital-appraise .a-detail .hospital-item .hospital-item-detail{
+    width: 78.333333%;
+  }
+  .page-hospital-appraise .a-detail .hospital-item .hospital-item-footer{
+    width: 78.333333%;
+  }
+}

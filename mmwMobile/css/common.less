@@ -1,0 +1,215 @@
+@import "mui";
+
+.page-sub-menu{
+  margin-top: 10px;
+  margin-bottom: 18px;
+  width: 100%;
+  max-width: 640px;
+  display: inline-block;
+  overflow: hidden;
+  &:after{
+    .remove-float(0);
+  }
+  .a-item{
+    height: 68.75px;
+    width: 50%;
+//    margin-bottom: 2px;
+    background: #ffffff;
+    .b-detail{
+      padding-left: 35.7421875px;
+      height: 39.0625px;
+      margin-top:14.84375px;
+      img{
+        float: left;
+        max-height: 100%;
+        margin-right: 12px;
+      }
+      .c-title{
+        .set-font(@font-YaHei,16px,#666,400);
+      }
+      .c-summary{
+        .set-font(@font-YaHei,12px,#868686,400);
+      }
+    }
+  }
+  .a-item:nth-child(2n-1){
+    float: left;
+    margin-left: -1px;
+  }
+  .a-item:nth-child(2n){
+    float: right;
+    margin-right: -1px;
+  }
+}
+
+//案例经历分享
+.page-panel-one{
+  margin-bottom: 10px;
+  background: #ffffff;
+  &:after{
+    .remove-float(0);
+  }
+  .a-header{
+    height: 20px;
+    padding: 16px  11.71875px;
+    line-height: 20px;
+    .set-font(@font-YaHei,16px,#666,400);
+    .b-left-tag{
+      height: 100%;
+      width: 4px;
+      background: #10a7b2;
+      border-radius: 2px;
+      float: left;
+      margin-right: 15px;
+    }
+  }
+  .a-detail{
+    &:after{
+      .remove-float(0);
+    }
+  }
+  .a-footer{
+    height:14.6484375px;
+    line-height:14.6484375px;
+    padding: 11.81640625px 0;
+    border-top: 1px solid #f3f3f3;
+    text-align: center;
+    .set-font(@font-YaHei,14.6484375px,#999,400);
+    .b-text{
+      display: inline-block;
+    }
+    img{
+      max-height: 100%;
+    }
+  }
+}
+
+//整形项目咨询
+.page-information{
+  .a-header{
+    .b-left-tag{
+      background: #ac9d80;
+    }
+  }
+  .a-detail{
+    padding: 0 11.71875px;
+    .information-item{
+      padding: 15.625px 0;
+      height: 82.03136666666667px;
+      border-top: 1px solid #eeeeee;
+      &:after{
+        .remove-float(0);
+      }
+      .e-left{
+        width: 82.03136666666667px;
+        height: 82.03136666666667px;
+        margin-right: 11.132828333333334px;
+        float: left;
+        img{
+          float: left;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .e-right{
+        height: 100%;
+        margin: 0;
+        .f-title{
+          .set-font(@font-YaHei,14.6484375px,#666666,400);
+          .text-ellipsis;
+        }
+        .f-detail{
+          .set-font(@font-YaHei,12px,#999999,400);
+          .texts-ellipsis(4);
+        }
+      }
+    }
+  }
+  .a-footer{
+    height: 30px;
+  }
+}
+
+//banner
+.page-banner-one{
+  margin-bottom: 10px;
+  background: #ffffff;
+  &:after{
+    .remove-float(0);
+  }
+  .a-detail{
+    margin: 0;
+    padding-bottom:36px;
+    .b-item{
+      .c-img{
+        text-align: center;
+        position: relative;
+        img{
+          display: inherit;
+        }
+        .d-block{
+          .set-font(@font-YaHei,16px,#ffffff,400);
+          line-height: 28px;
+          .text-ellipsis;
+          background: rgba(0,0,0,.5);
+          position: absolute;
+          z-index: 10;
+          bottom: 0;
+          width: 100%;
+          text-align: left;
+          span{
+            margin-left: @page-p;
+          }
+        }
+      }
+      .c-detail{
+        padding: 11px @page-p 0 @page-p;
+        background: #ffffff;
+        .set-font(@font-YaHei,13px,#7e7e7e,400);
+        .texts-ellipsis(3);
+      }
+    }
+  }
+  img{
+    max-width: 100%;
+  }
+  .swiper-pagination{
+    .swiper-pagination-bullet{
+      width: 12px;
+      height: 12px;
+      background: #bfbfbf;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+      background: #13a6b0;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .page-panel-one{
+    .a-header{
+      font-size: 15px !important;
+      height: 18px !important;
+      line-height: 18px !important;
+      padding: 14px 11.71875px !important;
+    }
+    .a-detail{
+      .b-item{
+        .c-detail{
+          .d-title{
+            font-size: 14px !important;
+            line-height: 14px !important;
+            padding-top: 13px !important;
+          }
+          .d-summary{
+            font-size: 10px !important;
+            line-height: 10px !important;
+            padding-top: 5px !important;
+            padding-bottom: 12px !important;
+          }
+        }
+      }
+    }
+  }
+}

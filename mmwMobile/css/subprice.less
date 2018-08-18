@@ -1,0 +1,38 @@
+@import "mui";
+
+.page-price-product{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  &:after{
+    .remove-float(0);
+  }
+  .a-item{
+    background: #ffffff;
+    border-bottom: 2px solid #eeeeee;
+    .set-font(@font-YaHei,12px,#999999,400);
+    height: 28px;
+    line-height: 28px;
+    padding: 6px @page-p;
+    .text-ellipsis;
+    span.product-name{
+      color: #333333;
+    }
+    span.product-price{
+      color: #eb9a26;
+    }
+    span{
+      margin-right: 5px;
+    }
+
+  }
+}
+
+.page-wechat{
+  padding: 15px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  background: #ffffff;
+  img{
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,60 @@
+.text-ellipsis {
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body {
+  background: #eeeeee;
+}
+.page-sub-menu {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.page-detail {
+  margin: 0 0 10px 0;
+}
+.page-detail:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-detail .a-header {
+  font-family: "Microsoft YaHei";
+  font-size: 15px;
+  font-weight: 400;
+  color: #666666;
+  background: #ffffff;
+  height: 18px;
+  line-height: 18px;
+  padding: 10px 11.71875px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 4px;
+}
+.page-detail .a-header .b-left-tag {
+  height: 100%;
+  width: 4px;
+  background: #f1bc2b;
+  border-radius: 2px;
+  float: left;
+  margin-right: 15px;
+}
+.page-detail .a-detail {
+  padding: 11.71875px;
+  background: #ffffff;
+}
+.page-detail .a-detail:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-detail .a-detail img {
+  max-width: 100%;
+}

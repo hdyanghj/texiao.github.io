@@ -1,0 +1,45 @@
+.text-ellipsis {
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page-project .a-header .b-left-tag {
+  background: #ee8477;
+}
+.page-project .a-detail {
+  padding: 0 1.71875px 0 11.71875px;
+}
+.page-project .a-detail .page-project-item {
+  padding: 5px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+.page-project .a-detail .page-project-item-top {
+  color: #ee8477;
+}
+.page-project .a-detail .page-project-item-top:hover {
+  background: #ee8477;
+  border: 1px solid #ee8477;
+  color: #ffffff;
+}
+.page-project .a-line {
+  height: 4px;
+  background: #eeeeee;
+  /*width: 100%;
+    float: left;*/
+  margin-bottom: 10px;
+}
