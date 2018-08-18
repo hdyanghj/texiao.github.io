@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>恋比特-HOME</title> 
+	<!-- 适用于移动端 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //适用于移动端 -->
+	<link href="css/public.css" type="text/css" rel="stylesheet" media="all"> 
+	<link href="css/animate.css" type="text/css" rel="stylesheet" media="all"> 
+	<link href="font-icon/iconfont.css" type="text/css" rel="stylesheet" media="all"> 
+</head>
+<body>
+	<!-- 头部导航 -->
+	<header class="public_nav">
+		<nav class="nav_btn">
+			<a href="/index.html" title="恋比特" class="nav_logo"></a>
+			<span id="navBtnIcon"  href="javascript:;" title="按钮" class="nav_btn_icon">
+	            <i></i>
+	            <i></i>
+	            <i></i>
+	        </span>
+		</nav>
+		<ul class="nav_cont" id="navCont">
+			<li class="nav-list">
+				<a href="javascript:;"><i class="nav-icon biticon biticon-home"></i><span>首页</span></a>
+			</li>
+			<li class="nav-list">
+				<a href="javascript:;"><i class="nav-icon biticon biticon-baasqukuailianfuwu"></i><span>区块链</span><i class="biticon biticon-right"></i></a>
+				<ul class="secondary_list">
+					<li><a href="javascript:;"><span>区块链技术开发</span></a></li>
+					<li><a href="javascript:;"><span>区块链项目服务</span></a></li>
+					<li><a href="javascript:;"><span>区块链生态</span></a></li>
+				</ul>
+			</li>
+			<li class="nav-list">
+				<a href="javascript:;"><i class="nav-icon  biticon biticon-youxichongzhi"></i><span>游戏开发</span><i class="biticon biticon-right"></i></a>
+				<ul class="secondary_list">
+					<li><a href="javascript:;"><span>棋牌游戏</span></a></li>
+					<li><a href="javascript:;"><span>H5游戏</span></a></li>
+					<li><a href="javascript:;"><span>其他游戏开发</span></a></li>
+				</ul>
+			</li>
+			<li class="nav-list">
+				<a href="javascript:;"><i class="nav-icon  biticon biticon-shouji"></i><span>APP微信开发</span><i class="biticon biticon-right"></i></a>
+				<ul class="secondary_list">
+					<li><a href="javascript:;"><span>APP开发</span></a></li>
+					<li><a href="javascript:;"><span>微信开发</span></a></li>
+					<li><a href="javascript:;"><span>其他软件开发</span></a></li>
+				</ul>
+			</li>
+			<li class="nav-list">
+				<a href="javascript:;"><i class="nav-icon  biticon biticon-xiangao"></i><span>金融软件开发</span></a>
+			</li>
+			<li class="nav-list">
+				<a href="javascript:;"><i class="nav-icon  biticon biticon-heart"></i><span>品质服务</span></a>
+			</li>
+			<li class="nav-list">
+				<a href="javascript:;"><i class="nav-icon  biticon biticon-user"></i><span>关于我们</span></a>
+			</li>
+			<li class="nav-list">
+				<a href="javascript:;"><i class="nav-icon  biticon biticon-hangyezixun"></i><span>行业咨讯</span></a>
+			</li>
+		</ul>
+	</header>
+	<div id="hideNavCont"></div>
+	<!-- 头部导航// -->
+	<!-- 底部导航 -->
+	<footer class="footer_cont">
+		<ul>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
+	</footer>
+	<!-- 底部导航 //-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		// 导航
+		$(function(){
+		    // nav收缩展开
+		    $('.nav-list>a').on('click',function(){
+		        if (!$('.nav').hasClass('nav-mini')) {
+		            if ($(this).next().css('display') == "none") {
+		                //展开未展开
+		                $('.nav-list').children('ul').slideUp(300);
+		                $(this).next('ul').slideDown(300);
+		                $(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
+		            }else{
+		                //收缩已展开
+		                $(this).next('ul').slideUp(300);
+		                $('.nav-list.nav-show').removeClass('nav-show');
+		            }
+		        }
+		    });
+		    //点击按钮显示隐藏导航
+		    $('#navBtnIcon').on('click',function(){
+		        if (!$('.nav_cont').hasClass('nav-show')) {
+		            $('.nav_cont').addClass('nav-show');
+		            $('.nav_cont').removeClass('nav-hide');
+		            $('#hideNavCont').addClass('nav-show');
+		            $('#hideNavCont').removeClass('nav-hide');
+		            $('.nav_btn_icon').addClass('cur');
+
+		        }else{
+		            $('.nav_cont').addClass('nav-hide');
+		            $('.nav_cont').removeClass('nav-show');
+		            $('#hideNavCont').addClass('nav-hide');
+		            $('#hideNavCont').removeClass('nav-show');
+		            $('.nav_btn_icon').removeClass('cur');
+
+		        }
+		    });
+		     //点击导航外空白区域隐藏导航
+		    $('#hideNavCont').on('click',function(){
+		    	$('.nav_cont').addClass('nav-hide');
+	            $('.nav_cont').removeClass('nav-show');
+	            $('#hideNavCont').addClass('nav-hide');
+	            $('#hideNavCont').removeClass('nav-show');
+		    });
+		});
+		var panDuan=function(){
+			$("html").css("font-size", document.documentElement.clientWidth / 375 * 312.5 + "%");
+		}
+		$(window).resize(function() {
+	        panDuan()
+	    });
+	    panDuan();
+	</script>
+</body>
+</html>
